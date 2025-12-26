@@ -54,11 +54,14 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/wishlist', wishlistRoutes);
 
 // Serve static assets in production
+// Serve static assets in production
+// Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
+  // Serve frontend build from dist folder
   app.use(express.static(path.join(__dirname, '../dist')));
-  
+
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../dist', 'index.html'));
+    res.sendFile(path.join(__dirname, '../dist', 'index.html'));
   });
 }
 
