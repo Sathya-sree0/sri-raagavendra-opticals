@@ -59,8 +59,8 @@ const Header: React.FC = () => {
       <div className="bg-primary-900 text-white py-2 hidden md:block">
         <div className="container-custom flex justify-between items-center">
           <div className="text-sm">
-            <span className="mr-4">Call us: +91 98765 43210</span>
-            <span>Email: contact@sriragavendraopticals.com</span>
+            <span className="mr-4">Call us: +91 9994179456</span>
+            <span>Email: sriragavendraopticals1990@gmail.com</span>
           </div>
           <div className="flex space-x-4 text-sm">
             <Link to="/book-appointment" className="hover:text-secondary-300">Book an Eye Test</Link>

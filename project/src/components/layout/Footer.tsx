@@ -33,15 +33,15 @@ const Footer: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-start">
                 <MapPin className="text-secondary-500 mr-2 mt-1 flex-shrink-0" size={18} />
-                <span className="text-gray-400">123 Main Street, Chennai, Tamil Nadu, 600001</span>
+                <span className="text-gray-400">No 87, Big chetty Street, opposite to LRS electrics, Chengalpattu, Tamil Nadu, 603001</span>
               </div>
               <div className="flex items-center">
                 <Phone className="text-secondary-500 mr-2 flex-shrink-0" size={18} />
-                <span className="text-gray-400">+91 98765 43210</span>
+                <span className="text-gray-400">+91 9994179456</span>
               </div>
               <div className="flex items-center">
                 <Mail className="text-secondary-500 mr-2 flex-shrink-0" size={18} />
-                <span className="text-gray-400">contact@sriragavendraopticals.com</span>
+                <span className="text-gray-400">sriragavendraopticals1990@gmail.com</span>
               </div>
             </div>
           </div>
