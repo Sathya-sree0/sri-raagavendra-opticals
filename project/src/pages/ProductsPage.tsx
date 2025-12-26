@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Filter, SlidersHorizontal, Grid, List, ChevronDown, Search, X } from 'lucide-react';
+import api from "../api/api";
+
 
 interface Product {
   _id: string;
@@ -71,12 +73,9 @@ const ProductsPage: React.FC = () => {
         if (searchQuery) queryParams.append('search', searchQuery);
         queryParams.append('sortBy', sortBy);
         
-        const response = await fetch(`/api/products?${queryParams.toString()}`);
-        const data = await response.json();
-        
-        if (!response.ok) throw new Error(data.message || 'Failed to fetch products');
-        
-        setProducts(data.products);
+       const { data } = await api.get(`/api/products?${queryParams.toString()}`);
+       setProducts(data.products);
+
       } catch (err: any) {
         setError(err.message);
       } finally {
